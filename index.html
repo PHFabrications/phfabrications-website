@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="P&H Fabrications - Bespoke gates, fencing, railings, welding repairs and general metal fabrication in South Yorkshire.">
+<meta name="description" content="P&H Fabrications - Bespoke gates and railings, welding repairs and general metal fabrication in South Yorkshire.">
 
-<title>P&H Fabrications | Quality Work. Built to Last.</title>
+<title>P&H Fabrications | Bespoke Gates & Railings</title>
 
 <style>
 * {
@@ -125,6 +125,16 @@ nav a:hover {
     background: #3d82bb;
 }
 
+.button.secondary {
+    background: transparent;
+    border: 1px solid #6fa6d2;
+    margin-left: 10px;
+}
+
+.button.secondary:hover {
+    background: #2d6ea3;
+}
+
 section {
     padding: 80px 5%;
 }
@@ -195,6 +205,39 @@ section {
     color: #606970;
 }
 
+/* RAILINGS */
+
+.railings {
+    background: #20252b;
+    color: #fff;
+}
+
+.railings .section-intro {
+    color: #cbd0d4;
+}
+
+.railing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.railing-card {
+    background: #2a3035;
+    border: 1px solid #3b4349;
+    padding: 30px;
+    min-height: 220px;
+}
+
+.railing-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.railing-card p {
+    color: #cbd0d4;
+}
+
 /* SERVICES */
 
 .services {
@@ -252,10 +295,34 @@ section {
     color: #6fa6d2;
 }
 
+/* DESIGN */
+
+.design {
+    background: #f3f4f5;
+}
+
+.design-box {
+    background: #20252b;
+    color: #fff;
+    padding: 55px;
+    text-align: center;
+}
+
+.design-box h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.design-box p {
+    color: #cbd0d4;
+    max-width: 650px;
+    margin: 0 auto 25px;
+}
+
 /* GALLERY */
 
 .gallery {
-    background: #f3f4f5;
+    background: #fff;
 }
 
 .gallery-grid {
@@ -359,7 +426,17 @@ footer {
         padding: 85px 5%;
     }
 
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .button.secondary {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
     .gate-grid,
+    .railing-grid,
     .service-grid,
     .gallery-grid,
     .about,
@@ -373,6 +450,14 @@ footer {
 
     .quote h2 {
         font-size: 34px;
+    }
+
+    .design-box {
+        padding: 40px 25px;
+    }
+
+    .design-box h2 {
+        font-size: 32px;
     }
 }
 </style>
@@ -389,6 +474,7 @@ footer {
 
         <nav>
             <a href="#gates">Gates</a>
+            <a href="#railings">Railings</a>
             <a href="#services">Services</a>
             <a href="#gallery">Gallery</a>
             <a href="#about">About</a>
@@ -397,7 +483,6 @@ footer {
 
     </div>
 </header>
-
 
 <main>
 
@@ -410,17 +495,21 @@ footer {
         <small>P&H Fabrications</small>
 
         <h1>
-            Bespoke gates,
-            <span>built to last.</span>
+            Bespoke gates &
+            <span>railings.</span>
         </h1>
 
         <p>
-            Made-to-measure gates, fencing, railings and metalwork,
-            fabricated to your requirements in South Yorkshire.
+            Made-to-measure metalwork, designed and fabricated to suit
+            your property and requirements in South Yorkshire.
         </p>
 
         <a class="button" href="#quote">
-            Request a Quote
+            Get a Quote
+        </a>
+
+        <a class="button secondary" href="#gallery">
+            View Our Work
         </a>
 
     </div>
@@ -437,12 +526,10 @@ footer {
         <h2 class="section-title">Bespoke Gates</h2>
 
         <p class="section-intro">
-            Every gate can be made to suit your measurements, property
-            and preferred design. Choose from simple modern styles,
-            traditional decorative designs or something completely
-            your own.
+            Every gate is made to your measurements and chosen design.
+            From simple modern styles to traditional decorative designs,
+            we can build something to suit your property.
         </p>
-
 
         <div class="gate-grid">
 
@@ -477,45 +564,167 @@ footer {
 </section>
 
 
+<!-- RAILINGS -->
+
+<section id="railings" class="railings">
+
+    <div class="container">
+
+        <h2 class="section-title">Bespoke Railings</h2>
+
+        <p class="section-intro">
+            Made-to-measure railings designed and fabricated to suit
+            your property, whether you want something simple,
+            decorative or completely custom.
+        </p>
+
+        <div class="railing-grid">
+
+            <div class="railing-card">
+                <h3>Garden Railings</h3>
+                <p>
+                    Practical and attractive railings for gardens,
+                    paths and boundaries.
+                </p>
+            </div>
+
+            <div class="railing-card">
+                <h3>Property Railings</h3>
+                <p>
+                    Bespoke railings designed around the style and
+                    layout of your property.
+                </p>
+            </div>
+
+            <div class="railing-card">
+                <h3>Custom Designs</h3>
+                <p>
+                    Have your own design in mind? We can discuss your
+                    requirements and build it to suit.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
 <!-- SERVICES -->
 
 <section id="services" class="services">
 
     <div class="container">
 
-        <h2 class="section-title">Our Services</h2>
+        <h2 class="section-title">More Than Gates & Railings</h2>
 
         <p class="section-intro">
-            Gates are our main focus, but we also take on a range
-            of fabrication and welding work.
+            Gates and railings are our main focus, but we're happy
+            to take on a wide range of fabrication, welding and
+            repair work.
         </p>
-
 
         <div class="service-grid">
 
             <div class="service">
-                <h3>Railings & Fencing</h3>
+                <h3>General Fabrication</h3>
                 <p>
-                    Fabricated steel railings and fencing for gardens,
-                    boundaries, driveways and other applications.
+                    One-off metalwork and custom fabrication made to
+                    your measurements and requirements.
                 </p>
             </div>
 
             <div class="service">
                 <h3>Welding Repairs</h3>
                 <p>
-                    Welding repairs and maintenance for damaged or
-                    worn metalwork.
+                    Repairs and alterations to existing metalwork,
+                    along with general welding work.
                 </p>
             </div>
 
             <div class="service">
-                <h3>General Fabrication</h3>
+                <h3>Custom Metalwork</h3>
                 <p>
-                    One-off steel fabrication projects made to your
-                    measurements and requirements.
+                    If you have an idea or need something made,
+                    get in touch and we'll discuss what's possible.
                 </p>
             </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+    <div class="container about">
+
+        <div>
+
+            <h2 class="section-title">
+                About P&H Fabrications
+            </h2>
+
+            <p>
+                P&H Fabrications is a small South Yorkshire fabrication
+                business specialising in bespoke gates and railings.
+            </p>
+
+            <br>
+
+            <p>
+                We work with customers to create made-to-measure
+                metalwork based on their property, measurements and
+                preferred design.
+            </p>
+
+            <br>
+
+            <p>
+                We also take on general fabrication, welding repairs
+                and other custom metalwork projects.
+            </p>
+
+        </div>
+
+        <div class="about-box">
+
+            <div>
+                <strong>P&H</strong>
+                BESPOKE FABRICATION
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- DESIGN -->
+
+<section class="design">
+
+    <div class="container">
+
+        <div class="design-box">
+
+            <h2>Have an idea for a gate?</h2>
+
+            <p>
+                Send us your measurements, photos or design ideas.
+                We can discuss your requirements and work with you
+                to create a gate that suits your property.
+            </p>
+
+            <a class="button" href="#quote">
+                Start Your Enquiry
+            </a>
 
         </div>
 
@@ -536,7 +745,6 @@ footer {
             Examples of previous fabrication and welding work.
             More projects will be added as we grow.
         </p>
-
 
         <div class="gallery-grid">
 
@@ -559,48 +767,6 @@ footer {
 </section>
 
 
-<!-- ABOUT -->
-
-<section id="about">
-
-    <div class="container about">
-
-        <div>
-
-            <h2 class="section-title">
-                Quality Work. Built to Last.
-            </h2>
-
-            <p>
-                P&H Fabrications is a small South Yorkshire fabrication
-                business focused on quality workmanship and practical,
-                made-to-measure metalwork.
-            </p>
-
-            <br>
-
-            <p>
-                We specialise in bespoke gates and fencing, while also
-                taking on welding repairs and general fabrication work.
-            </p>
-
-        </div>
-
-
-        <div class="about-box">
-
-            <div>
-                <strong>P&H</strong>
-                QUALITY FABRICATION
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
 <!-- QUOTE -->
 
 <section id="quote" class="quote">
@@ -609,12 +775,12 @@ footer {
 
         <div>
 
-            <h2>Request a Quote</h2>
+            <h2>Get a Quote</h2>
 
             <p class="quote-text">
                 Tell us what you're looking for and provide as much
-                information as possible. We'll review your requirements
-                and get back to you with a quotation.
+                information as possible. Measurements, photos and
+                design ideas can all help us understand your project.
             </p>
 
             <div class="contact-details">
@@ -641,7 +807,6 @@ footer {
 
         </div>
 
-
         <form action="mailto:info@p-hfabrications.com"
               method="post"
               enctype="text/plain">
@@ -661,7 +826,6 @@ footer {
 
             </div>
 
-
             <div class="form-group">
 
                 <label for="phone">
@@ -675,7 +839,6 @@ footer {
                 >
 
             </div>
-
 
             <div class="form-group">
 
@@ -692,7 +855,6 @@ footer {
 
             </div>
 
-
             <div class="form-group">
 
                 <label for="project">
@@ -701,18 +863,19 @@ footer {
 
                 <select id="project" name="Project">
 
+                    <option>Bespoke gate</option>
                     <option>Driveway gate</option>
                     <option>Pedestrian gate</option>
-                    <option>Fencing</option>
                     <option>Railings</option>
+                    <option>Fencing</option>
                     <option>Welding repair</option>
                     <option>General fabrication</option>
+                    <option>Custom metalwork</option>
                     <option>Other</option>
 
                 </select>
 
             </div>
-
 
             <div class="form-group">
 
@@ -728,7 +891,6 @@ footer {
                 ></textarea>
 
             </div>
-
 
             <button class="button" type="submit">
                 Send Quote Request
