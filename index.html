@@ -1,386 +1,758 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="P&H Fabrications - Bespoke gates, railings, fencing, welding repairs and general metal fabrication in South Yorkshire.">
-    <title>P&H Fabrications | Quality Work. Built to Last.</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+<meta name="description" content="P&H Fabrications - Bespoke gates, fencing, railings, welding repairs and general metal fabrication in South Yorkshire.">
 
-        html {
-            scroll-behavior: smooth;
-        }
+<title>P&H Fabrications | Quality Work. Built to Last.</title>
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            color: #20252b;
-            background: #ffffff;
-            line-height: 1.6;
-        }
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-        header {
-            background: #20252b;
-            color: #ffffff;
-            padding: 18px 5%;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            border-bottom: 3px solid #2d6ea3;
-        }
+html {
+    scroll-behavior: smooth;
+}
 
-        .nav {
-            max-width: 1200px;
-            margin: auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 20px;
-        }
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #20252b;
+    background: #fff;
+    line-height: 1.6;
+}
 
-        .logo {
-            font-size: 25px;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-        }
+header {
+    background: #20252b;
+    color: #fff;
+    padding: 18px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 3px solid #2d6ea3;
+}
 
-        .logo span {
-            color: #6d747b;
-        }
+.nav {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-        nav {
-            display: flex;
-            gap: 24px;
-        }
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
 
-        nav a {
-            color: #ffffff;
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: 600;
-        }
+.logo span {
+    color: #7c858c;
+}
 
-        nav a:hover {
-            color: #6fa6d2;
-        }
+nav {
+    display: flex;
+    gap: 25px;
+}
 
-        .hero {
-            background:
-                linear-gradient(rgba(25, 30, 35, 0.88), rgba(25, 30, 35, 0.88)),
-                #30363b;
-            color: #ffffff;
-            padding: 110px 5%;
-        }
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
 
-        .hero-content {
-            max-width: 1200px;
-            margin: auto;
-        }
+nav a:hover {
+    color: #6fa6d2;
+}
 
-        .hero h1 {
-            font-size: clamp(40px, 7vw, 72px);
-            line-height: 1.05;
-            max-width: 850px;
-            margin-bottom: 25px;
-        }
+.hero {
+    background:
+        linear-gradient(rgba(25,30,35,.91), rgba(25,30,35,.91)),
+        #30363b;
+    color: #fff;
+    padding: 115px 5%;
+}
 
-        .hero h1 span {
-            color: #6fa6d2;
-        }
+.hero-content {
+    max-width: 1200px;
+    margin: auto;
+}
 
-        .hero p {
-            font-size: 20px;
-            max-width: 700px;
-            color: #d9dde0;
-            margin-bottom: 35px;
-        }
+.hero small {
+    color: #6fa6d2;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
 
-        .button {
-            display: inline-block;
-            background: #2d6ea3;
-            color: #ffffff;
-            padding: 14px 25px;
-            text-decoration: none;
-            font-weight: 700;
-            border-radius: 3px;
-        }
+.hero h1 {
+    font-size: clamp(42px, 7vw, 74px);
+    line-height: 1.05;
+    max-width: 900px;
+    margin: 18px 0 25px;
+}
 
-        .button:hover {
-            background: #3d82bb;
-        }
+.hero h1 span {
+    color: #6fa6d2;
+}
 
-        section {
-            padding: 75px 5%;
-        }
+.hero p {
+    font-size: 20px;
+    max-width: 700px;
+    color: #d9dde0;
+    margin-bottom: 35px;
+}
 
-        .container {
-            max-width: 1200px;
-            margin: auto;
-        }
+.button {
+    display: inline-block;
+    background: #2d6ea3;
+    color: #fff;
+    padding: 14px 26px;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
 
-        .section-title {
-            font-size: 38px;
-            margin-bottom: 15px;
-            color: #20252b;
-        }
+.button:hover {
+    background: #3d82bb;
+}
 
-        .section-intro {
-            max-width: 700px;
-            color: #606970;
-            margin-bottom: 40px;
-        }
+section {
+    padding: 80px 5%;
+}
 
-        .services {
-            background: #f3f4f5;
-        }
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
 
-        .service-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 22px;
-        }
+.section-title {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
 
-        .service {
-            background: #ffffff;
-            padding: 30px;
-            border-top: 4px solid #2d6ea3;
-            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
-        }
+.section-intro {
+    max-width: 720px;
+    color: #606970;
+    margin-bottom: 40px;
+}
 
-        .service h3 {
-            font-size: 21px;
-            margin-bottom: 10px;
-        }
+/* GATES */
 
-        .service p {
-            color: #606970;
-        }
+.gates {
+    background: #fff;
+}
 
-        .about {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: center;
-        }
+.gate-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
 
-        .about-box {
-            background: #20252b;
-            min-height: 320px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #ffffff;
-            text-align: center;
-            padding: 40px;
-        }
+.gate-card {
+    background: #f3f4f5;
+    border: 1px solid #e0e3e5;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 28px;
+    position: relative;
+    overflow: hidden;
+}
 
-        .about-box strong {
-            font-size: 30px;
-            color: #6fa6d2;
-        }
+.gate-card::before {
+    content: "GATE";
+    position: absolute;
+    top: 35px;
+    left: 30px;
+    font-size: 60px;
+    font-weight: 900;
+    color: #dce0e3;
+    letter-spacing: 4px;
+}
 
-        .quote {
-            background: #20252b;
-            color: #ffffff;
-            text-align: center;
-        }
+.gate-card h3,
+.gate-card p {
+    position: relative;
+    z-index: 2;
+}
 
-        .quote h2 {
-            font-size: 42px;
-            margin-bottom: 15px;
-        }
+.gate-card h3 {
+    font-size: 23px;
+    margin-bottom: 8px;
+}
 
-        .quote p {
-            max-width: 650px;
-            margin: 0 auto 30px;
-            color: #d9dde0;
-        }
+.gate-card p {
+    color: #606970;
+}
 
-        footer {
-            background: #15191d;
-            color: #aeb5ba;
-            padding: 30px 5%;
-            text-align: center;
-            font-size: 14px;
-        }
+/* SERVICES */
 
-        @media (max-width: 800px) {
-            nav {
-                display: none;
-            }
+.services {
+    background: #f3f4f5;
+}
 
-            .hero {
-                padding: 80px 5%;
-            }
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
 
-            .service-grid {
-                grid-template-columns: 1fr;
-            }
+.service {
+    background: #fff;
+    padding: 30px;
+    border-top: 4px solid #2d6ea3;
+    box-shadow: 0 4px 18px rgba(0,0,0,.05);
+}
 
-            .about {
-                grid-template-columns: 1fr;
-                gap: 30px;
-            }
+.service h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
 
-            section {
-                padding: 60px 5%;
-            }
+.service p {
+    color: #606970;
+}
 
-            .quote h2 {
-                font-size: 32px;
-            }
-        }
-    </style>
+/* ABOUT */
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about p {
+    color: #50585f;
+}
+
+.about-box {
+    background: #20252b;
+    min-height: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.about-box strong {
+    display: block;
+    font-size: 60px;
+    color: #6fa6d2;
+}
+
+/* GALLERY */
+
+.gallery {
+    background: #f3f4f5;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery-item {
+    min-height: 230px;
+    background: #dfe2e4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #697177;
+    border: 1px solid #d2d6d9;
+}
+
+/* QUOTE */
+
+.quote {
+    background: #20252b;
+    color: #fff;
+}
+
+.quote-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.quote h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.quote-text {
+    color: #cbd0d4;
+    max-width: 500px;
+}
+
+form {
+    background: #fff;
+    padding: 30px;
+    color: #20252b;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccd1d5;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.contact-details {
+    margin-top: 30px;
+}
+
+.contact-details a {
+    color: #6fa6d2;
+    text-decoration: none;
+}
+
+/* FOOTER */
+
+footer {
+    background: #15191d;
+    color: #aeb5ba;
+    padding: 30px 5%;
+    text-align: center;
+    font-size: 14px;
+}
+
+@media (max-width: 850px) {
+
+    nav {
+        display: none;
+    }
+
+    .hero {
+        padding: 85px 5%;
+    }
+
+    .gate-grid,
+    .service-grid,
+    .gallery-grid,
+    .about,
+    .quote-layout {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 60px 5%;
+    }
+
+    .quote h2 {
+        font-size: 34px;
+    }
+}
+</style>
 </head>
 
 <body>
 
 <header>
     <div class="nav">
-        <div class="logo">P&H <span>FABRICATIONS</span></div>
+
+        <div class="logo">
+            P&H <span>FABRICATIONS</span>
+        </div>
 
         <nav>
+            <a href="#gates">Gates</a>
             <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
             <a href="#about">About</a>
-            <a href="#quote">Request a Quote</a>
+            <a href="#quote">Quote</a>
         </nav>
+
     </div>
 </header>
 
+
 <main>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Quality fabrication, <span>built around you.</span></h1>
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <small>P&H Fabrications</small>
+
+        <h1>
+            Bespoke gates,
+            <span>built to last.</span>
+        </h1>
+
+        <p>
+            Made-to-measure gates, fencing, railings and metalwork,
+            fabricated to your requirements in South Yorkshire.
+        </p>
+
+        <a class="button" href="#quote">
+            Request a Quote
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- GATES -->
+
+<section id="gates" class="gates">
+
+    <div class="container">
+
+        <h2 class="section-title">Bespoke Gates</h2>
+
+        <p class="section-intro">
+            Every gate can be made to suit your measurements, property
+            and preferred design. Choose from simple modern styles,
+            traditional decorative designs or something completely
+            your own.
+        </p>
+
+
+        <div class="gate-grid">
+
+            <div class="gate-card">
+                <h3>Driveway Gates</h3>
+                <p>
+                    Made-to-measure driveway gates designed around
+                    your property and opening.
+                </p>
+            </div>
+
+            <div class="gate-card">
+                <h3>Pedestrian Gates</h3>
+                <p>
+                    Strong and practical garden and pedestrian gates
+                    built to your requirements.
+                </p>
+            </div>
+
+            <div class="gate-card">
+                <h3>Decorative Gates</h3>
+                <p>
+                    Traditional and decorative designs incorporating
+                    your choice of ironwork and details.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section id="services" class="services">
+
+    <div class="container">
+
+        <h2 class="section-title">Our Services</h2>
+
+        <p class="section-intro">
+            Gates are our main focus, but we also take on a range
+            of fabrication and welding work.
+        </p>
+
+
+        <div class="service-grid">
+
+            <div class="service">
+                <h3>Railings & Fencing</h3>
+                <p>
+                    Fabricated steel railings and fencing for gardens,
+                    boundaries, driveways and other applications.
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>Welding Repairs</h3>
+                <p>
+                    Welding repairs and maintenance for damaged or
+                    worn metalwork.
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>General Fabrication</h3>
+                <p>
+                    One-off steel fabrication projects made to your
+                    measurements and requirements.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- GALLERY -->
+
+<section id="gallery" class="gallery">
+
+    <div class="container">
+
+        <h2 class="section-title">Our Work</h2>
+
+        <p class="section-intro">
+            Examples of previous fabrication and welding work.
+            More projects will be added as we grow.
+        </p>
+
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item">
+                Your project photo
+            </div>
+
+            <div class="gallery-item">
+                Your project photo
+            </div>
+
+            <div class="gallery-item">
+                Your project photo
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+    <div class="container about">
+
+        <div>
+
+            <h2 class="section-title">
+                Quality Work. Built to Last.
+            </h2>
 
             <p>
-                Bespoke gates, fencing, railings and metal fabrication,
-                made to your requirements in South Yorkshire.
+                P&H Fabrications is a small South Yorkshire fabrication
+                business focused on quality workmanship and practical,
+                made-to-measure metalwork.
             </p>
 
-            <a class="button" href="#quote">Request a Quote</a>
-        </div>
-    </section>
+            <br>
 
-    <section id="services" class="services">
-        <div class="container">
-            <h2 class="section-title">What We Do</h2>
-
-            <p class="section-intro">
-                From individual gates to welding repairs and general fabrication,
-                we build practical, durable metalwork to suit each project.
+            <p>
+                We specialise in bespoke gates and fencing, while also
+                taking on welding repairs and general fabrication work.
             </p>
 
-            <div class="service-grid">
-
-                <div class="service">
-                    <h3>Bespoke Driveway Gates</h3>
-                    <p>
-                        Made-to-measure metal driveway gates designed around
-                        your opening, property and preferred style.
-                    </p>
-                </div>
-
-                <div class="service">
-                    <h3>Pedestrian & Garden Gates</h3>
-                    <p>
-                        Strong, practical pedestrian gates built to your
-                        measurements with a choice of designs and finishes.
-                    </p>
-                </div>
-
-                <div class="service">
-                    <h3>Railings & Fencing</h3>
-                    <p>
-                        Fabricated railings and metal fencing for gardens,
-                        boundaries, driveways and other applications.
-                    </p>
-                </div>
-
-                <div class="service">
-                    <h3>Welding Repairs</h3>
-                    <p>
-                        Welding and repair work for damaged or worn metalwork,
-                        including general repairs and maintenance.
-                    </p>
-                </div>
-
-                <div class="service">
-                    <h3>General Fabrication</h3>
-                    <p>
-                        One-off fabrication projects built from steel and
-                        other suitable metals to your requirements.
-                    </p>
-                </div>
-
-                <div class="service">
-                    <h3>Bespoke Metalwork</h3>
-                    <p>
-                        If you have an idea that doesn't fit a standard
-                        product, get in touch and we can discuss it.
-                    </p>
-                </div>
-
-            </div>
         </div>
-    </section>
 
-    <section id="about">
-        <div class="container about">
+
+        <div class="about-box">
 
             <div>
-                <h2 class="section-title">Built Properly. Built to Last.</h2>
-
-                <p>
-                    P&H Fabrications is a small South Yorkshire fabrication
-                    business focused on quality workmanship and practical,
-                    made-to-measure metalwork.
-                </p>
-
-                <br>
-
-                <p>
-                    We specialise in bespoke gates and fencing, while also
-                    taking on welding repairs and general fabrication work.
-                </p>
-            </div>
-
-            <div class="about-box">
-                <div>
-                    <strong>P&H</strong>
-                    <br>
-                    QUALITY FABRICATION
-                </div>
+                <strong>P&H</strong>
+                QUALITY FABRICATION
             </div>
 
         </div>
-    </section>
 
-    <section id="quote" class="quote">
-        <div class="container">
-            <h2>Need a Bespoke Gate?</h2>
+    </div>
 
-            <p>
-                Tell us what you're looking for, provide your measurements
-                and we'll get back to you with a quotation.
+</section>
+
+
+<!-- QUOTE -->
+
+<section id="quote" class="quote">
+
+    <div class="container quote-layout">
+
+        <div>
+
+            <h2>Request a Quote</h2>
+
+            <p class="quote-text">
+                Tell us what you're looking for and provide as much
+                information as possible. We'll review your requirements
+                and get back to you with a quotation.
             </p>
 
-            <a class="button" href="mailto:info@p-hfabrications.com">
-                Request a Quote
-            </a>
+            <div class="contact-details">
+
+                <p>
+                    Phone:
+                    <a href="tel:01709514632">
+                        01709 514632
+                    </a>
+                </p>
+
+                <p>
+                    Email:
+                    <a href="mailto:info@p-hfabrications.com">
+                        info@p-hfabrications.com
+                    </a>
+                </p>
+
+                <p>
+                    South Yorkshire
+                </p>
+
+            </div>
+
         </div>
-    </section>
+
+
+        <form action="mailto:info@p-hfabrications.com"
+              method="post"
+              enctype="text/plain">
+
+            <div class="form-group">
+
+                <label for="name">
+                    Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="Name"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="phone">
+                    Phone
+                </label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    name="Phone"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="email">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="Email"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="project">
+                    What do you need?
+                </label>
+
+                <select id="project" name="Project">
+
+                    <option>Driveway gate</option>
+                    <option>Pedestrian gate</option>
+                    <option>Fencing</option>
+                    <option>Railings</option>
+                    <option>Welding repair</option>
+                    <option>General fabrication</option>
+                    <option>Other</option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="message">
+                    Tell us about your project
+                </label>
+
+                <textarea
+                    id="message"
+                    name="Message"
+                    placeholder="Include measurements, preferred style, location and anything else that may help."
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <button class="button" type="submit">
+                Send Quote Request
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
 
 </main>
 
+
 <footer>
-    <p>© 2026 P&H Fabrications. All rights reserved.</p>
-    <p>South Yorkshire</p>
+
+    <p>
+        © 2026 P&H Fabrications. All rights reserved.
+    </p>
+
+    <p>
+        South Yorkshire
+    </p>
+
 </footer>
 
 </body>
